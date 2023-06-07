@@ -1,0 +1,150 @@
+.img-background {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.img-svg {
+  height: 100%;
+  width: auto;
+}
+.resize-none {
+  resize: none;
+}
+body{
+  color: $black;
+  font-weight: 400;
+  font-size: 1.125rem;
+  line-height: 180%;
+  font-family: 'Comfortaa';
+}
+.main{
+  padding-top: 11.1rem;
+}
+h1{
+  font-size: 2.375rem;
+  line-height: 110%;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: $green;
+}
+h2{
+  font-size: 3.25rem;
+  line-height: 140%;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: $white;
+}
+h3{
+  font-size: 2rem;
+  line-height: 140%;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: black;
+  text-align: center;
+}
+h4{
+  font-size: 1.5rem;
+  line-height: 110%;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.bg{
+  background-color: $cyan-bg;
+}
+.default{
+  color: $green;
+}
+.btn{
+  display: block;
+  font-size: 1.25rem;
+  padding: 0.75rem 1.5rem;
+  transition: all .3s ease-out;
+}
+.btn-outline-primary{
+  border: 0.0625rem solid $green-light;
+  border-radius: 0;
+  color: $green;
+  &:hover{
+    background-color: $green-light;
+    color: $white;
+  }
+}
+.btn-outline-secondary{
+  border: 0.0625rem solid $bright-green;
+  color: $white;
+  border-radius: 0;
+  &:hover{
+    background-color:$bright-green;
+    color: $white;
+    border: 0.0625rem solid $bright-green;
+  }
+}
+.btn-secondary{
+  background-color: $bright-green;
+  color: $green-light;
+  border-radius: 0;
+  border: 0.0625rem solid $bright-green;
+  svg{
+    font-size: 1.625rem;
+  }
+  &:hover{
+    background-color:$white;
+    border: 0.0625rem solid $bright-green;
+  }
+}
+.btn-border{
+  border: 0.0625rem solid $cyan-200;
+}
+thead, tbody, tfoot, td, tr, th{
+  border: 0.0625rem solid $black;
+}
+.modal-icon{
+  font-size: 1.25rem;
+}
+.certificate-height{
+  max-height: 26.875rem;
+}
+.offcanvas-contact{
+  text-decoration: none;
+  &:hover{
+    text-decoration: underline;
+  }
+}
+.globalClass_bad6{
+  position: relative;
+  z-index: 101;
+}
+@include media-breakpoint-down(xl) {
+  h2 {
+    font-size: 2rem;
+  }
+}
+@include media-breakpoint-down(lg) {
+  .btn{
+    font-size: 1rem;
+  }
+  .main{
+    padding-top: 3rem;
+  }
+  body{
+    font-size: 1rem;
+  }
+}
+@include media-breakpoint-down(md) {
+  h1 {
+    font-size: 1.25rem;
+  }
+  h2 {
+    font-size: 1.5rem;
+  }
+  h3 {
+    font-size: 1.25rem;
+  }
+  h4{
+    font-size: 1.0625rem;
+  }
+  h5{
+    font-size: 1rem;
+  }
+}

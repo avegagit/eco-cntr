@@ -1,0 +1,32 @@
+.about{
+  &-image{
+    height: 24rem;
+  }
+  &-text{
+    max-width: 27.5rem;
+  }
+  &-link{
+    display: inline-block;
+    padding-right: 0.5rem;
+    text-decoration: none;
+    &:hover{
+      color: $teal;
+      text-decoration: underline;
+    }
+  }
+}
+@include media-breakpoint-down(xl) {
+.about {
+  &-text {
+    max-width: inherit;
+    padding-top: 1.5rem;
+    }
+  }
+}
+@include media-breakpoint-down(md) {
+  .about {
+    &-image {
+      height: 13.75rem;
+    }
+  }
+}

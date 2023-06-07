@@ -1,0 +1,79 @@
+.nav{
+  &-link{
+    padding-right:0;
+    padding-left:0;
+    font-size: 1.125rem;
+  }
+  &-item{
+    color: $black;
+    &:not(:last-child){
+      padding-right: 6.25rem;
+    }
+  }
+}
+.dropdown-menu{
+  width: 20rem;
+}
+.dropdown-item{
+  white-space: normal;
+  padding: 0.25rem 0.5rem;
+  border: 0.03125rem solid $white;
+  background: $cyan-header;
+  color: $green;
+}
+.submenu {
+  position: absolute;
+  top: 0;
+  left: 20rem;
+  z-index: 5;
+  padding: 0;
+  min-width: 16.25rem;
+  background: $cyan-header;
+  border-top: none;
+  visibility: hidden;
+  opacity: 0;
+  transform-origin: 0% 0%;
+  transform: rotateX(-90deg);
+  transition: .3s linear;
+  box-shadow: 0 0.375rem 0.75rem rgba(0,0,0,.175);
+  li {
+    position: relative;
+    list-style-type: none;
+    line-height: 150%;
+    transition: all 0.2s ease-in;
+    a {
+      color: $green;
+      text-decoration: none;
+      padding: 0.5rem 1rem;
+      display: inline-block;
+    }
+    &:hover{
+      background-color: $green;
+    }
+  }
+}
+nav li:hover > .submenu {
+  transform: rotateX(0deg);
+  visibility: visible;
+  opacity: 1;
+}
+.subsubmenu {
+  left: 16rem;
+}
+
+.triangle-right {
+  display: inline-block;
+  border: 0.3125rem solid transparent;
+  border-left: 0.3125rem solid $white;
+  margin-left: 0.3125rem;
+}
+@include media-breakpoint-down(xl) {
+  .nav{
+    &-item{
+      color: $black;
+      &:not(:last-child){
+        padding-right: 3.125rem;
+      }
+    }
+  }
+}

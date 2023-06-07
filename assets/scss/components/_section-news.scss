@@ -1,0 +1,34 @@
+.news{
+  .bb{
+    &:after{
+      content: '';
+      display: block;
+      width:100%;
+      position: absolute;
+      border-bottom: 0.0625rem solid $cyan;
+      z-index: -3;
+    }
+  }
+  &-link{
+    display: inline-block;
+    padding-right: 0.5rem;
+    text-decoration: none;
+    margin-top: auto;
+    font-size: 1rem;
+    &:hover{
+      color: $teal;
+      text-decoration: underline;
+    }
+  }
+}
+@include media-breakpoint-down(md) {
+  .news{
+    .card-body{
+      border-top: 0.0625rem solid $cyan-200;
+    }
+    &-link{
+      font-size: 0.875rem;
+    }
+  }
+}
+

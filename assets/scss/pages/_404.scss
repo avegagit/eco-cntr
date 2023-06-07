@@ -1,0 +1,16 @@
+.error-body h1{
+  font-size:13.125rem;
+  font-weight:900;
+  line-height:13.125rem;
+}
+.text-muted{
+  color:#8d9ea7;
+  text-transform: uppercase;
+}
+@media only screen and (max-width: 520px) {
+  .error-body h1 {
+    font-size: 6.875rem;
+    font-weight: 700;
+    line-height: 6.875rem
+  }
+}

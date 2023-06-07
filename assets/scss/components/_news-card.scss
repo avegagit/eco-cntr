@@ -1,0 +1,25 @@
+.news-card{
+  max-height: 37.5rem;
+  text-decoration: none;
+  &-image{
+    margin: 0 auto;
+    img{
+      height: 15.625rem;
+      object-fit: cover;
+    }
+  }
+  &-slogan{
+    text-transform: none;
+    height: 4.5rem;
+    font-weight: 700;
+    text-align: center;
+    @include truncate-text(2);
+  }
+}
+@include media-breakpoint-down(md) {
+  .news-card{
+    &-slogan{
+      height: 100%;
+    }
+  }
+}

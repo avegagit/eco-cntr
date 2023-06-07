@@ -1,0 +1,67 @@
+.benefits{
+  .bb{
+    &:after{
+      content: '';
+      display: block;
+      width:100%;
+      position: absolute;
+      border-bottom: 0.0625rem solid $cyan;
+      z-index: -3;
+    }
+  }
+  &-body{
+    position: relative;
+  }
+  &-text{
+    color: $white;
+    text-transform: uppercase;
+    font-size: 1.125rem;
+    line-height: 140%;
+    position: absolute;
+    top: 35%;
+    width: 100%;
+    z-index: 100;
+    span{
+      display: block;
+      max-width: 14.375rem;
+      margin: 0 auto;
+    }
+  }
+  &-image{
+    height: 28.25rem;
+    overflow: hidden;
+    position: relative;
+    z-index: 0;
+
+  }
+  &-link{
+    display: inline-block;
+    margin-top: 2.5rem;
+    padding-right: 0.5rem;
+    text-decoration: none;
+    &:hover{
+      text-decoration: underline;
+      color: $teal;
+    }
+  }
+}
+@include media-breakpoint-down(xl) {
+  .benefits{
+    &-image{
+      margin-top: 1.25rem;
+    }
+  }
+}
+@include media-breakpoint-down(md) {
+  .benefits{
+    &-link {
+      margin-top: 1.5rem;
+    }
+    .card{
+      border: 0.0625rem solid $cyan-200;
+    }
+  }
+}
+
+
+

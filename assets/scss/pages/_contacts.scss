@@ -1,0 +1,48 @@
+.contacts{
+  //color: $green-light;
+  &__item{
+    padding-top: 1.875rem;
+    color: $black;
+    a {
+      text-decoration: none;
+      &:hover {
+        text-decoration: underline;
+        color: $teal;
+        svg{
+          fill: $teal;
+        }
+      }
+    }
+    svg{
+      fill: $green-light;
+    }
+  }
+  &__info{
+    a{
+      text-decoration: none;
+    }
+  }
+  &-iframe{
+    width: 100%;
+    margin-bottom: -0.4375rem;
+    border: 0.0625rem solid $white;
+    min-height: 18.75rem;
+    max-height: 31.25rem;
+    overflow: hidden;
+    height: 43.75rem;
+  }
+}
+@include media-breakpoint-down(lg) {
+  .contacts {
+    &__item {
+      padding-top: 0.875rem;
+    }
+  }
+}
+@include media-breakpoint-down(sm) {
+  .contacts{
+    &-iframe{
+      height: 25rem;
+    }
+  }
+}

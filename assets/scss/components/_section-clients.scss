@@ -1,0 +1,55 @@
+.clients{
+  .bb{
+    &:after{
+      content: '';
+      display: block;
+      width:100%;
+      position: absolute;
+      border-bottom: 0.0625rem solid $cyan;
+      z-index: -3;
+    }
+  }
+  &-text{
+    max-width: 27.5rem;
+  }
+  &-img{
+    display: block;
+    width: 12.5rem;
+    max-height: 12.5rem;
+    overflow: hidden;
+    text-align: center;
+    img{
+      display: block;
+      height: auto;
+      object-fit: cover;
+    }
+  }
+}
+@include media-breakpoint-down(xxl) {
+  .clients {
+    &-img{
+      width: 9rem;
+    }
+  }
+}
+@include media-breakpoint-down(lg) {
+  .clients {
+    &-text{
+      max-width: inherit;
+    }
+  }
+}
+@include media-breakpoint-down(sm) {
+  .clients {
+    &-img{
+      max-width: 6.25rem;
+      img{
+       width: 100%;
+      }
+    }
+    .btn{
+      width: 100%;
+    }
+  }
+}
+

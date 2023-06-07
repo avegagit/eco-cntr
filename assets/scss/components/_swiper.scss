@@ -1,0 +1,74 @@
+.swiper{
+  &-button {
+    &-prev{
+      color: $white;
+      &:after{
+        font-size: 1rem;
+      }
+    }
+    &-next{
+      color: $white;
+      &:after{
+        font-size: 1rem;
+      }
+    }
+  }
+  &-bottom{
+    height: 28.75rem;
+    width: auto;
+    &:hover{
+      .swiper-bottom__block{
+        display: block;
+      }
+    }
+  }
+  &-pagination{
+    bottom: 2.5rem;
+    left: -15rem;
+    &-bullet{
+      width: 0.625rem;
+      height: 0.625rem;
+      background: $white;
+    }
+    &-bullets{
+      bottom: 2.5rem;
+      left: -15rem;
+    }
+    &-bcg{
+      color: $white;
+      font-size: 1.25rem;
+      font-weight: 700;
+      line-height: 160%;
+    }
+  }
+}
+
+@include media-breakpoint-down(lg) {
+  .swiper {
+    &-pagination{
+      bottom: 0.5rem;
+      left: -1rem;
+    }
+  }
+}
+@include media-breakpoint-down(md) {
+  .swiper {
+    &-pagination{
+      font-size: 1rem;
+    }
+  }
+}
+@include media-breakpoint-down(sm) {
+  .swiper {
+    &-button {
+      &-prev {
+        top: 84%;
+        left: 0rem;
+      }
+      &-next {
+        top: 84%;
+        right: 0rem;
+      }
+    }
+  }
+}

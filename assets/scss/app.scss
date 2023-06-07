@@ -1,0 +1,39 @@
+@import '~bootstrap/scss/mixins';
+
+@import
+  'utilities/functions',
+  'utilities/variables',
+  'utilities/mixins';
+
+@import
+  'base/root',
+  'base/base',
+  'base/typography';
+
+@import
+  'components/card',
+  'components/news-card',
+  'components/section-about',
+  'components/section-benefits',
+  'components/section-clients',
+  'components/section-company',
+  'components/section-contacts',
+  'components/section-form',
+  'components/section-news',
+  'components/section-services',
+  'components/section-scheme',
+  'components/transitions',
+  'components/swiper';
+
+@import
+  'layout/cookies',
+  'layout/header',
+  'layout/modal',
+  'layout/menu',
+  'layout/offcanvas',
+  'layout/footer';
+
+@import
+  'pages/contacts',
+  'pages/404';
+

@@ -1,0 +1,170 @@
+.company{
+  &__body{
+    &:after{
+      content: '';
+      background: #232900;
+    }
+    .slider__image-bcg {
+      position: relative;
+      z-index: -5;
+      width: 100%;
+      height: 43.75rem;
+      &:before {
+        //background-color: rgba(0,0,0,.45);
+        content: "";
+        position: absolute;
+        width: 7rem;
+        height: 43.75rem;
+        top: 0rem;
+        background: linear-gradient(270deg, rgba(176, 203, 31, 0.4) 0%, rgba(176, 203, 31, 0) 100%);
+        transform: matrix(-1, 0, 0, 1, 0, 0);
+      }
+      &:after {
+        content: "";
+        position: absolute;
+        width: 7rem;
+        height: 43.75rem;
+        right: 0rem;
+        top: 0rem;
+        background: linear-gradient(270deg, rgba(176, 203, 31, 0.4) 0%, rgba(176, 203, 31, 0) 100%);
+      }
+    }
+      img {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        &:before {
+          content: "";
+          background-color: rgba(0, 0, 0, .45);
+          position: absolute;
+          width: 100%;
+          height: 43.75rem;
+        }
+      }
+
+      &-bcg {
+        position: relative;
+        z-index: 1;
+      }
+      &-desc {
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        width: 60rem;
+        margin-left: -30rem;
+        z-index: 5;
+        color: $white;
+        display: inline;
+        //background-color: rgba(255, 255, 255, 0.85);
+        padding: 0 0.625rem 0 0;
+      }
+    .heading-text{
+      max-width: 41.875rem;
+      padding-bottom: 0.75rem;
+    }
+  }
+  &-title{
+    margin-bottom: 2rem;
+    @include truncate-text(4);
+  }
+  &-info{
+    margin-bottom: 4rem;
+    @include truncate-text(3);
+  }
+  &-btn{
+    padding-bottom: 5rem;
+    display: flex;
+    margin: 0 auto;
+  }
+  &-green{
+    display: inline-block;
+    color: $bright-green;
+  }
+}
+@include media-breakpoint-down(xl) {
+  .company {
+    &__body {
+      &-desc {
+        bottom: 7rem;
+      }
+      .slider__image-bcg {
+        height: 31.25rem;
+        &:before {
+          height: 31.25rem;
+        }
+        &:after {
+          height: 31.25rem;
+        }
+      }
+      img {
+        &:before {
+          height: 31.25rem;
+        }
+      }
+    }
+    &-title{
+      padding-bottom: 1rem;
+    }
+    &-info{
+      padding-bottom: 1rem;
+    }
+    &-btn{
+      padding-bottom: 1rem;
+    }
+  }
+}
+@include media-breakpoint-down(lg) {
+  .company {
+    &__body {
+      &-desc {
+        width: 45rem;
+        bottom: 3rem;
+        margin-left: -23rem;
+      }
+    }
+  }
+}
+@include media-breakpoint-down(md) {
+  .company {
+    &__body {
+      &-desc {
+        width: 35rem;
+        bottom: 2.5rem;
+        margin-left: -16rem;
+      }
+    }
+  }
+}
+@include media-breakpoint-down(md) {
+  .company {
+    &__body {
+      &-desc {
+        width: 32rem;
+        bottom: 2.5rem;
+      }
+    }
+  }
+}
+@include media-breakpoint-down(md) {
+  .company {
+    &__body {
+      &-desc {
+        width: 32rem;
+        bottom: 2.5rem;
+      }
+    }
+  }
+}
+@include media-breakpoint-down(sm) {
+  .company {
+    &__body {
+      &-desc {
+        width: 19rem;
+        margin-left: -9.5rem;
+        bottom: 2.5rem;
+      }
+    }
+  }
+}
+
+
